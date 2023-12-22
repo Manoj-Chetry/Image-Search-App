@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0 30px 0;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    font-weight: 500;
+}
+#search-input:focus, #search-input:active{
+    border-color: transparent;
+    outline: none;
+}
+
+#search-button{
+    margin-left: 10px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background-color: rgb(109, 167, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.results{
+    margin-bottom: 40px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.results img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.results img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.results a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+#show-more{
+    background-color: rgb(20, 127, 127);
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .results{
+        width: 45%;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .results{
+        width: 100%;
+    }
+}
