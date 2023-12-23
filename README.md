@@ -1,0 +1,1 @@
+This is a simple demo project - Image-Search App. This project is built by me for learning html, css and javascript. The images in this project are fetched from unsplash api which they provide. Happy Learning!!
